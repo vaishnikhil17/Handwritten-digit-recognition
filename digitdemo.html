@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Handwritten Digit Recognition by Convolutional Neural Network</title>
+    
+	<script src="jquery.js"></script>
+    <script type="text/javascript" src="mathutils.js"></script>
+    <script type="text/javascript" src="mnist_digit_labels.js"></script>
+    <script type="text/javascript" src="webcnn.js"></script>
+    <script type="text/javascript" src="digitdemo.js"></script>
+    <link href="digitdemo.css" rel="stylesheet"/>
+</head>
+<body>
+
+
+
+<div id="headerDiv"><a></a></div>
+
+<div id="contentDiv">
+<h1>Handwritten Digit Recognition by Convolutional Neural Network</h1>
+
+<div id="recognizer">
+    <div class="inlineDiv">
+        <div id="drawingCanvasDiv"><canvas id="drawCanvas" width="300" height="300"></canvas></div>
+        <button class="silverButton" onclick="buttonClick(2)" id="clearButton">Reset</button>
+    </div>
+    <div class="inlineDiv">
+        <div id="guessNumberDiv"></div>
+        <div>Prediction: <span id="confidence">0%</span></div>
+    </div>
+
+</div>
+    <div style="text-align: center; font-size: 12px; padding: 8px 0px 0px 0px;"></div>
+    <h2></h2>
+    <p>
+        
+    </p>
+<h2></h2>
+<p>
+    
+</p>
+
+<h2></h2>
+
+    
+    
+
+<p>
+   
+
+</p>
+
+<div id="footerDiv">
+   
+</div>
+<script>
+	function updateSliderDisplay( id, value )
+	{
+		document.querySelector('#'+id).value = value;
+	}
+</script>
+</body>
+</html>
